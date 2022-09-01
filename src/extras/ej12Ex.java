@@ -9,29 +9,35 @@ public class ej12Ex {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
+    String NumCadena;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 for (int k = 0; k < 10; k++) {
-                    if (i == 3) {
-                        String numCadena = String.valueOf(i);
-                        numCadena = "E";
-                        System.out.println(numCadena + " - " + j + " - " + k);
-                    } else if (j == 3) {
-                        String numCadena = String.valueOf(j);
-                        numCadena = "E";
-                        System.out.println(i + " - " + numCadena + " - " + k);
-                    } else if (k == 3) {
-                        String numCadena = String.valueOf(k);
-                        numCadena = "E";
-                        System.out.println(i + " - " + j + " - " + numCadena);   
-                    } else {
-                        System.out.println(i + " - " + j + " - " + k);
+                    NumCadena= String.valueOf(i);
+                    if (NumCadena.equals("3")) {
+                      NumCadena="E";  
                     }
-                        
-
+                    System.out.print(NumCadena + " - ");
+                    NumCadena= String.valueOf(j);
+                    if (NumCadena.equals("3")) {
+                      NumCadena="E";  
+                    }
+                    System.out.print(NumCadena + " - ");
+                    
+                    NumCadena= String.valueOf(k);
+                    if (NumCadena.equals("3")) {
+                      NumCadena="E";  
+                    }
+                    System.out.println(NumCadena);
+                    
                 }
+                
             }
+            
         }
+        
+
 
     }
+
 }
